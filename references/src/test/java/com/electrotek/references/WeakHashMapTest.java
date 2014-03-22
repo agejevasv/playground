@@ -17,12 +17,12 @@ public class WeakHashMapTest {
     
     @Test
     public void letsSeeIfWeakHashMapClearsItself() throws InterruptedException {       
-        Map<FatBastard, Integer> map = new WeakHashMap<>();
+        Map<MemoryBlackHole, Integer> map = new WeakHashMap<>();
         
-        FatBastard fb1 = new FatBastard();
-        FatBastard fb2 = new FatBastard();
-        FatBastard fb3 = new FatBastard();
-        FatBastard fb4 = new FatBastard();
+        MemoryBlackHole fb1 = new MemoryBlackHole();
+        MemoryBlackHole fb2 = new MemoryBlackHole();
+        MemoryBlackHole fb3 = new MemoryBlackHole();
+        MemoryBlackHole fb4 = new MemoryBlackHole();
         
         map.put(fb1, 1);
         map.put(fb2, 2);

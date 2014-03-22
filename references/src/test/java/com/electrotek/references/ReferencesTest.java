@@ -10,7 +10,7 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.electrotek.references.FatBastard;
+import com.electrotek.references.MemoryBlackHole;
 
 /**
  * Educational test to show how Soft and Weak references work.
@@ -21,18 +21,18 @@ import com.electrotek.references.FatBastard;
 public class ReferencesTest {
 
     List<byte[]> iLikeToEatMemory;
-    ReferenceQueue<FatBastard> softQueue;
-    ReferenceQueue<FatBastard> weakQueue;
-    SoftReference<FatBastard> soft;
-    WeakReference<FatBastard> weak;
+    ReferenceQueue<MemoryBlackHole> softQueue;
+    ReferenceQueue<MemoryBlackHole> weakQueue;
+    SoftReference<MemoryBlackHole> soft;
+    WeakReference<MemoryBlackHole> weak;
     
     @Before
     public void init() {
         iLikeToEatMemory = new ArrayList<>();
         softQueue = new ReferenceQueue<>();
         weakQueue = new ReferenceQueue<>();
-        soft = new SoftReference<>(new FatBastard(), softQueue);
-        weak = new WeakReference<>(new FatBastard(), weakQueue);
+        soft = new SoftReference<>(new MemoryBlackHole(), softQueue);
+        weak = new WeakReference<>(new MemoryBlackHole(), weakQueue);
         printOut();
     }
     
