@@ -7,7 +7,7 @@ package com.electrotek.references;
  * @author Viktoras Agejevas
  *
  */
-class FatBastard {
+class MemoryBlackHole {
     
     @SuppressWarnings("unused")
     private byte[] weight = new byte[1024 * 1024 * 5];

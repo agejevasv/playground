@@ -18,12 +18,12 @@ public class SoftHashMapTest {
 
     @Test
     public void letsSeeIfSoftHashMapClearsItself() throws InterruptedException {       
-        Map<Integer, FatBastard> map = new SoftHashMap<>();
+        Map<Integer, MemoryBlackHole> map = new SoftHashMap<>();
 
-        FatBastard fb1 = new FatBastard();
-        FatBastard fb2 = new FatBastard();
-        FatBastard fb3 = new FatBastard();
-        FatBastard fb4 = new FatBastard();
+        MemoryBlackHole fb1 = new MemoryBlackHole();
+        MemoryBlackHole fb2 = new MemoryBlackHole();
+        MemoryBlackHole fb3 = new MemoryBlackHole();
+        MemoryBlackHole fb4 = new MemoryBlackHole();
         
         map.put(1, fb1);
         map.put(2, fb2);
